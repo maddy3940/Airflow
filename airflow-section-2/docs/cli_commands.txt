@@ -64,6 +64,9 @@ airflow scheduler &
 * Start Airflow’s scheduler in background
 
 
+# create user
+airflow users create -u admin -f admin -l admin -r Admin -e admin@airflow.com -p admin
+
 airflow webserver &
 * Start Airflow’s webserver in background
 
