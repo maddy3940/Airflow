@@ -4,3 +4,40 @@ docker build -t airflow-basic .
 * Build a docker image from the Dockerfile in the current directory (airflow-materials/airflow-basic)  and name it airflow-basic
 
 docker run --rm -d -p 8080:8080 airflow-basic
+
+
+## 
+docke ps
+
+docker exec -it c2746d89dfa5 /bin/bash
+
+aiflow db init
+
+
+aiflow db reset (be careful when you use it)
+
+airflow db upgrade
+
+airflow webserver/scheduler
+
+# In order to run a wokrer process in a worker node type the command-
+
+airflow celery worker
+
+
+airflow dags list
+
+airflow dags trigger {dag_id} -e 2023-05-25
+
+#List dag runs
+
+airflow dags list-runs -d {dag_id}
+
+
+airflow dags backfill -s 2021-01-01 -e 2021-02-05 --reset-dagruns
+
+
+airlfow tasks list dag_id
+
+# Test if task works before running each time you add a new task
+airflow tasks test DAG_ID TAKS_ID 2021-02-02
