@@ -5,14 +5,12 @@ docker build -t airflow-basic .
 
 docker run --rm -d -p 8080:8080 airflow-basic
 
-
 ## 
-docke ps
+docker ps
 
 docker exec -it c2746d89dfa5 /bin/bash
 
 aiflow db init
-
 
 aiflow db reset (be careful when you use it)
 
@@ -33,9 +31,7 @@ airflow dags trigger {dag_id} -e 2023-05-25
 
 airflow dags list-runs -d {dag_id}
 
-
 airflow dags backfill -s 2021-01-01 -e 2021-02-05 --reset-dagruns
-
 
 airlfow tasks list dag_id
 
