@@ -37,3 +37,6 @@ airlfow tasks list dag_id
 
 # Test if task works before running each time you add a new task
 airflow tasks test DAG_ID TAKS_ID 2021-02-02
+
+
+airflow tasks test forex_data_pipeline is_forex_rates_available 2021-01-01 
