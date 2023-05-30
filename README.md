@@ -1,2 +1,6 @@
-# airflow-materials
-Materials for the course: The Hands-On Guide
+# airflow-poc
+
+Built a forex data pipleine using airflow. Below is the DAG graph view-
+
+
+

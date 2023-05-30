@@ -65,6 +65,8 @@ USER airflow
 # Create the folder dags inside $AIRFLOW_HOME
 RUN mkdir -p ${AIRFLOW_HOME}/dags
 
+RUN chmod -R 777 ${AIRFLOW_HOME}
+
 # Expose ports (just to indicate that this container needs to map port)
 EXPOSE 8080
 

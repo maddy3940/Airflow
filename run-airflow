@@ -6,6 +6,10 @@ docker build -t airflow-basic .
 docker run --rm -d -p 8080:8080 airflow-basic
 
 ## 
+
+##
+chmod -R 777 /workspace/Airflow/airflow-section-3/mnt/airflow/dags
+
 docker ps
 
 docker exec -it c2746d89dfa5 /bin/bash
